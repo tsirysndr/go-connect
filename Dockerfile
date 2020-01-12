@@ -61,3 +61,5 @@ RUN go mod download
 COPY . .
 RUN CC=arm-linux-gnueabi-gcc GOOS=linux GOARCH=arm GOARM=7 CGO_ENABLED=1 go build -o get_technology_info example/get_technology_info/main.go
 RUN CC=arm-linux-gnueabi-gcc GOOS=linux GOARCH=arm GOARM=7 CGO_ENABLED=1 go build -o scan example/scan_wifi/main.go
+RUN CC=arm-linux-gnueabi-gcc GOOS=linux GOARCH=arm GOARM=7 CGO_ENABLED=1 go build -o enable_tethering example/enable_tethering/main.go
+RUN CC=arm-linux-gnueabi-gcc GOOS=linux GOARCH=arm GOARM=7 CGO_ENABLED=1 go build -o disable_tethering example/disable_tethering/main.go

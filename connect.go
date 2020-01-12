@@ -67,7 +67,6 @@ func (c *ConnectionManager) GetTechnologyInfo(technology string) (*Technology, e
 		return nil, err
 	}
 	for _, item := range *res {
-		// fmt.Println(reflect.ValueOf(item).Kind(), reflect.ValueOf(item))
 		if reflect.ValueOf(item).Kind() == reflect.Slice {
 			path := fmt.Sprintf("/net/connman/technology/%s", technology)
 			v := reflect.ValueOf(item)
