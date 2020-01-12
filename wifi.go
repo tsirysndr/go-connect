@@ -29,8 +29,8 @@ type Services struct {
 	DomainsConfiguration     []string          `json:"Domains.Configuration,omitempty"`
 	Proxy                    Proxy             `json:"Proxy,omitempty"`
 	ProxyConfiguration       interface{}       `json:"Proxy.Configuration,omitempty"`
-	MDNS                     bool              `json:"mDNS,omitempty"`
-	MDNSConfiguration        bool              `json:"mDNS.Configuration,omitempty"`
+	MDNS                     bool              `json:"mDNS"`
+	MDNSConfiguration        bool              `json:"mDNS.Configuration"`
 	Provider                 interface{}       `json:"Provider,omitempty"`
 }
 
