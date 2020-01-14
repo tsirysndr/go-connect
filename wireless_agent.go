@@ -1,4 +1,6 @@
-#!/usr/bin/python
+package connect
+
+const WIRELESS_AGENT = `#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
 # /usr/bin/net-agent
@@ -210,3 +212,4 @@ except:
 
 mainloop = gobject.MainLoop()
 mainloop.run()
+`
