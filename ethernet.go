@@ -16,6 +16,3 @@ func (s *EthernetService) ExtractNetworkProperties() {
 
 func (s *EthernetService) ApplyNetworkChanges() {
 }
-
-func (s *EthernetService) EnableTethering() {
-}

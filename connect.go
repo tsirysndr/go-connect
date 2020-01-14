@@ -58,6 +58,10 @@ func (c *ConnectionManager) GetManagerInterface() dbus.BusObject {
 	return c.base.Object(CONNMAN_OBJECT_PATH, "/")
 }
 
+func (c *ConnectionManager) GetServiceInterface(path dbus.ObjectPath) dbus.BusObject {
+	return c.base.Object(CONNMAN_OBJECT_PATH, path)
+}
+
 func (c *ConnectionManager) GetTechnologyInfo(technology string) (*Technology, error) {
 	info := Technology{}
 	bo := c.GetManagerInterface()
